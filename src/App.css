@@ -29,8 +29,9 @@
   margin: 0;
 }
 .navbar-logo {
-  height: 70px;
+  height: 40px;
   object-fit: cover;
+  margin: 20px;
 }
 
 

@@ -12,7 +12,7 @@ const AppLayout = () => {
       <Navbar expand="lg" className="bg-body-tertiary p-0">
         <Container fluid className="navbar-area">
           <Navbar.Brand href="#">
-            <img className="navbar-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8hV5BMf1bjQjJfVXUIEAkvljfW9ELi4kzIg&s"></img>
+            <img className="navbar-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
