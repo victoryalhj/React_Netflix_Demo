@@ -7,7 +7,7 @@ const Banner = () => {
     console.log('ddd', data);
 
   return (
-    <div>
+    <div className='banner-area'>
       Banner
     </div>
   )

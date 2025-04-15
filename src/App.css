@@ -54,3 +54,10 @@
   min-height: 100vh;
   color: white;
 }
+
+/* banner */
+.banner-area {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
