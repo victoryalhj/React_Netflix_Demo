@@ -1,0 +1,55 @@
+/* NotFoundPage */
+.not_found_page {
+  text-align: center;
+  margin-top: 50px;
+}
+.not_found_page h1 {
+  font-size: 100px;
+  margin-top: 0;
+}
+.not_found_page h2 {
+  font-size: 50px;
+}
+.not_found_page p {
+  font-size: 20px;
+}
+.not_found_page button {
+  background-color: rgb(60, 60, 89);
+  color: white;
+  margin: 10px 200px;
+  padding: 10px 100px;
+  font-size: 20px;
+  border-radius: 2px;
+  border: none;
+}
+
+/* navbar */
+.navbar-area {
+  background-color: black;
+  margin: 0;
+}
+.navbar-logo {
+  height: 70px;
+  object-fit: cover;
+}
+
+
+/* homepage */
+.homepage-area {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+/* homepage */
+.homepage-area {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+.movie-page-area {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
