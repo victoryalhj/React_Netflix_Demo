@@ -1,31 +1,39 @@
 import axios from "axios";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
+
 const api = axios.create({
   baseURL: "https://api.themoviedb.org/3",
   headers: {
     Accept: 'application/json',
-    Authorization: `Bearer ${API_KEY}`
+    Authorization: `Bearer ${API_KEY}`,
+    
   }
 })
 
-// Add a request interceptor
+// const api = axios.create({
+//   baseURL: "https://api.themoviedb.org/3",
+//   params: {
+//     api_key: API_KEY,  // 쿼리 파라미터로 api_key 전달
+//     language: "ko-KR", // 기본적으로 한국어로 설정 가능
+//   },
+// });
+
+// 요청 인터셉터 추가 (선택사항, 요청 전 후처리 가능)
 axios.interceptors.request.use(function (config) {
-  // Do something before request is sent
+  // 요청을 보내기 전에 처리할 작업
   return config;
 }, function (error) {
-  // Do something with request error
+  // 요청 에러 처리
   return Promise.reject(error);
 });
 
-// Add a response interceptor
+// 응답 인터셉터 추가 (선택사항, 응답 후 처리)
 axios.interceptors.response.use(function (response) {
-  // Any status code that lie within the range of 2xx cause this function to trigger
-  // Do something with response data
+  // 응답 성공 시 처리할 작업
   return response;
 }, function (error) {
-  // Any status codes that falls outside the range of 2xx cause this function to trigger
-  // Do something with response error
+  // 응답 에러 처리
   return Promise.reject(error);
 });
 
