@@ -3,7 +3,7 @@ import { usePopularMoviesQuery } from "../../../../hooks/usePopularMovies";
 import { Alert } from "bootstrap";
 import MovieSlider from "../../../../common/MovieSlider/MovieSlider";
 import { responsive } from "../../../../constants/responsive";
-
+import "./PopularMovieSlide.style.css"
 
 const PopularMovieSlide = () => {
   const { data, isLoading, isError, error } = usePopularMoviesQuery();
@@ -16,7 +16,12 @@ const PopularMovieSlide = () => {
   }
   return (
     <div>
-      <MovieSlider title='Popular Movies' movies={data.results} responsive={responsive}/>
+      <MovieSlider
+        title="Popular Movies"
+        movies={data.results}
+        containerClass="carousel-container"
+        responsive={responsive}
+      />
     </div>
   );
 };
